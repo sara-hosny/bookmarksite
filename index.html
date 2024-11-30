@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="title d-flex align-items-center justify-content-center   ">
+        <h1 class="pt-5 text-center position-relative">Bookmarker</h1>
+    </div>
+    <p class="m-5">........................................................................................................................................................................................................................................................................................................................................</p>
+    <div class="Bookmark d-flex align-items-center justify-content-center">
+ <h2>
+    <i class="fa-solid fa-bookmark"></i>
+    Bookmark your favorite sites
+    <i class="fa-solid fa-bookmark"></i>
+ </h2>
+    </div>
+
+<div class="site w-75 mx-auto mt-4 ">
+    <div>
+        <h6><i class="fa-solid fa-book"></i>  Site Name</h6>  
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="siteName" placeholder="name@example.com">
+          <label for="floatingInput">Bookmark Name</label>
+          <div class="alert alert-danger d-none mt-3" id="siteError">
+            site name mus start with captal letter
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h6><i class="fa-solid fa-link"></i>  Site URL</h6>  
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="siteUrl" placeholder="name@example.com">
+          <label for="floatingInput">Website URL</label>
+          <div class="alert alert-danger d-none mt-3" id="urlError">
+            Site URL must be a valid one
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-center">
+        <button class="btn1 text-white"  type="submit" id="addBtn">submit</button>
+        <button id='updateBtn'class="btn btn-outline-warning d-none" >update Site</button>
+      </div>
+      <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" id="search" placeholder="search">
+        <label for="floatingInput">search</label>
+      </div>
+</div>
+
+<p class="m-3 ms-5">...................................................................................................................................................................................................................................................................................................................................</p>
+<div class="d-flex align-items-center justify-content-center">
+    <table class="table w-75 text-center">
+        <thead>
+          <tr>
+            <th scope="col">index</th>
+            <th scope="col">Website Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Delete</th>
+            <th scope="col">update</th>
+          </tr>
+        </thead>
+        <tbody id="table">
+          
+        </tbody>
+    </table>
+</div>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+</html>
